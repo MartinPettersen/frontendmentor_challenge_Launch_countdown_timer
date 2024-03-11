@@ -14,7 +14,8 @@
     "eslint-config-prettier": "^9.1.0",
     "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -22,6 +23,7 @@
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
+    "@xpd/tailwind-3dtransforms": "^1.0.3",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-airbnb": "^19.0.4",

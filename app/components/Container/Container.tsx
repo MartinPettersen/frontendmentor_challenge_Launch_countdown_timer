@@ -3,7 +3,7 @@ import Headline from './Headline'
 import Clock from './Clock'
 
 const Container = () => (
-    <div className='border-2 border-white'>
+    <div className='flex flex-col gap-32'>
         <Headline />
         <Clock />
     </div>
