@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Red_Hat_Text } from "next/font/google";
 import "./globals.css";
 import React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+const redHatText = Red_Hat_Text({ subsets: ["latin"], weight: "700" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +16,7 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => (
     <html lang="en" >
-      <body className={`${inter.className} bg-[hsl(234,_17%,_12%)] bg-stars `}>{children}</body>
+      <body className={`${redHatText.className} bg-[hsl(234,_17%,_12%)] bg-stars `}>{children}</body>
     </html>
   )
 export default RootLayout;
