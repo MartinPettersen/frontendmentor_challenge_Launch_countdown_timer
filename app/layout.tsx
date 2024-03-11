@@ -16,7 +16,7 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => (
     <html lang="en" >
-      <body className={`${inter.className} bg-stars`}>{children}</body>
+      <body className={`${inter.className} bg-[hsl(234,_17%,_12%)] bg-stars `}>{children}</body>
     </html>
   )
 export default RootLayout;
