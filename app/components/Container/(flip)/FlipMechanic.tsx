@@ -37,7 +37,7 @@ const FlipMechanic = ({ flip, time, oldTime }: Props) => (
           } flex flex-col w-[70px] h-[32px] sm:w-[148px] sm:h-[75px]`}
         >
           <div className="h-[50%] w-full " />
-          <div className="h-[50%] w-full overflow-clip pt-2 sm:pt-9 flex items-center justify-center">
+          <div className="h-[50%] w-full overflow-clip pt-4 sm:pt-9 flex items-center justify-center">
             {oldTime}
           </div>
         </div>
