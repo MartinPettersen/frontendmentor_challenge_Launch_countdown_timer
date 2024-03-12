@@ -26,7 +26,7 @@ const FlipMechanic = ({ flip, time, oldTime }: Props) => (
             flip ? "transform rotate-x-180 flex flex-col" : "hidden "
           } w-[70px] h-[32px] sm:w-[148px] sm:h-[75px]`}
         >
-          <div className="h-[100%] w-full text-sky-300 overflow-clip flex items-end pb-[5px] sm:pb-[18px] justify-center">
+          <div className="h-[100%] w-full border-2 border-[hsl(234,_17%,_12%)] overflow-clip flex items-end pb-[5px] sm:pb-[18px] justify-center">
             {time}
           </div>
           <div className="h-[70%] w-full " />
@@ -37,7 +37,7 @@ const FlipMechanic = ({ flip, time, oldTime }: Props) => (
           } flex flex-col w-[70px] h-[32px] sm:w-[148px] sm:h-[75px]`}
         >
           <div className="h-[50%] w-full " />
-          <div className="h-[50%] w-full text-green-300 overflow-clip pt-2 sm:pt-9 flex items-center justify-center">
+          <div className="h-[50%] w-full overflow-clip pt-2 sm:pt-9 flex items-center justify-center">
             {oldTime}
           </div>
         </div>
