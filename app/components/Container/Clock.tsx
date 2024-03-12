@@ -47,7 +47,7 @@ const Clock = () => {
     return (
 
     
-    <div className='flex justify-center gap-6'>
+    <div className='flex justify-center gap-4 sm:gap-8'>
         <Timer label="DAYS" time={days} flipp={flipp}/>
         <Timer label="HOURS" time={hours} flipp={flipp}/>
         <Timer label="MINUTES" time={minutes} flipp={flipp}/>

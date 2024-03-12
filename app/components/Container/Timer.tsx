@@ -22,12 +22,12 @@ const Timer = ({ label, time, flipp }: Prop) => {
 
   return (
     <div className="flex flex-col items-center gap-2 sm:gap-4 ">
-      <div className="flex sm:text-6xl text-[hsl(345,_95%,_68%)]  flex-col items-center justify-center transform w-[70px] h-[71px] sm:w-[148px] sm:h-[150px]">
+      <div className="flex text-[36px] tracking-[-1.08px] sm:tracking-[-2.4px] sm:text-6xl text-[hsl(345,_95%,_68%)]  flex-col items-center justify-center transform w-[70px] h-[71px] sm:w-[148px] sm:h-[150px]">
         <FlipMechanic time={timeTemp} flip={flip} />
         <BackCards time={timeTemp} />
         <div className="z-10 fixed flex w-full justify-between">
-          <div className="w-[12px] rounded-full h-[12px] bg-[hsl(234,_17%,_12%)]"/>
-          <div className="w-[12px] rounded-full h-[12px] bg-[hsl(234,_17%,_12%)]"/>
+          <div className="w-[6px]  h-[6px] sm:w-[12px]  sm:h-[12px] rounded-full bg-[hsl(234,_17%,_12%)]"/>
+          <div className="w-[6px]  h-[6px] sm:w-[12px]  sm:h-[12px] rounded-full bg-[hsl(234,_17%,_12%)]"/>
         </div>
       </div>
       <TimeLabel label={label} />
