@@ -43,15 +43,15 @@ const Clock = () => {
             setSeconds(seconds -1)
         }
     },1000)
-
+    const flipp = true;
     return (
 
     
     <div className='flex justify-center gap-6'>
-        <Timer label="DAYS" time={days}/>
-        <Timer label="HOURS" time={hours}/>
-        <Timer label="MINUTES" time={minutes}/>
-        <Timer label="SECONDS" time={seconds}/>
+        <Timer label="DAYS" time={days} flipp={flipp}/>
+        <Timer label="HOURS" time={hours} flipp={flipp}/>
+        <Timer label="MINUTES" time={minutes} flipp={flipp}/>
+        <Timer label="SECONDS" time={seconds} flipp={flipp}/>
 
     </div>
   )}
