@@ -12,7 +12,7 @@ type Prop = {
 const Timer = ({ label, time, flipp }: Prop) => {
   const [flip, setFlip] = useState(false);
 
-  const [timeTemp, setTime] = useState(0);
+  const [timeTemp, setTime] = useState(14);
 
   useEffect(() => {
     setFlip(flipp);
@@ -21,7 +21,7 @@ const Timer = ({ label, time, flipp }: Prop) => {
   }, [time]);
 
   return (
-    <div className="flex flex-col items-center gap-2 sm:gap-6 ">
+    <div className="flex flex-col items-center gap-2 sm:gap-4 ">
       <div className="flex sm:text-6xl text-[hsl(345,_95%,_68%)]  flex-col items-center justify-center transform w-[70px] h-[71px] sm:w-[148px] sm:h-[150px]">
         <FlipMechanic time={timeTemp} flip={flip} />
         <BackCards time={timeTemp} />

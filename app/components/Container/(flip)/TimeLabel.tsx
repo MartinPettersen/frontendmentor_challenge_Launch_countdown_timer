@@ -5,7 +5,7 @@ type Props = {
 }
 
 const TimeLabel = ({label}: Props) => (
-    <div className="text-[hsl(237,_18%,_59%)] tracking-widest text-xs sm:text-md">
+    <div className="text-[hsl(237,_18%,_59%)] tracking-[5.92px] text-xs sm:text-md">
     {label}
   </div>
   )
