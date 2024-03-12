@@ -16,17 +16,29 @@ const Timer = ({ label, time, oldTime, flipp }: Prop) => {
 
   const [timeTemp, setTime] = useState(14);
 
+
+  const [oldTimeLocal, setOldTimeLocal] = useState(oldTime);
   useEffect(() => {
     setFlip(flipp);
+    setTimeout(() => {
+        setOldTimeLocal(time)
+        setFlip(false)
+    },900)
+    
+  }, [time]);
 
+
+  useEffect(() => {
+    setFlip(flipp);
     setTime(time);
+
   }, [time]);
 
   return (
     <div className="flex flex-col items-center gap-2 sm:gap-4 ">
       <div className="flex text-[36px] tracking-[-1.08px] sm:tracking-[-2.4px] sm:text-[80px] text-[hsl(345,_95%,_68%)]  flex-col items-center justify-center transform w-[70px] h-[71px] sm:w-[148px] sm:h-[150px]">
-        <FlipMechanic time={timeTemp} oldTime={oldTime} flip={flip} />
-        <BackCards time={timeTemp} oldTime={oldTime}/>
+        <FlipMechanic time={timeTemp} oldTime={oldTimeLocal} flip={flip} />
+        <BackCards time={timeTemp} oldTime={oldTimeLocal}/>
         <div className="z-10 fixed flex w-full justify-between">
           <div className="w-[6px]  h-[6px] sm:w-[12px]  sm:h-[12px] rounded-full bg-[hsl(234,_17%,_12%)]"/>
           <div className="w-[6px]  h-[6px] sm:w-[12px]  sm:h-[12px] rounded-full bg-[hsl(234,_17%,_12%)]"/>
