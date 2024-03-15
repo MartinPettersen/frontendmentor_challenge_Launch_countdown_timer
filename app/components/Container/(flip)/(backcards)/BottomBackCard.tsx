@@ -5,7 +5,7 @@ type Props = {
 };
 
 const BottomBackCard = ({ oldTime }: Props) => (
-    <div className="rounded-md border-t-2 pb-[4px] sm:pb-4  border-[hsl(234,_17%,_12%)] overflow-clip sm:rounded-xl flex items-end bg-[hsl(237,21%,26%)] justify-center  w-[70px] h-[32px] sm:w-[148px] sm:h-[75px] shadow-2xl shadow-[hsl(235,_16%,_14%)]">
+    <div className="rounded-md border-t-2 pb-[6px] sm:pb-[18px]  border-[hsl(234,_17%,_12%)] overflow-clip sm:rounded-xl flex items-end bg-[hsl(237,21%,26%)] justify-center  w-[70px] h-[32px] sm:w-[148px] sm:h-[75px] shadow-2xl shadow-[hsl(235,_16%,_14%)]">
       {oldTime}
     </div>
   );
